@@ -24,13 +24,13 @@ for i in range(len(data)):
         cities.append(data[i][1])
 country_1=set(country)
 country_1=list(country_1)
-
-dict={}
+#store data in the dictionary
+dict_cities={}
 a=[]
 for i in range(len(country_1)):
     for j in range(len(country)):
         if country_1[i]==country[j]:
             a.append(cities[j])
-    dict[country_1[i]]=a
+    dict_cities[country_1[i]]=a
     a=[]
-print (dict['Nepal'])
+    
